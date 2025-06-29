@@ -1,8 +1,7 @@
 # Hi there, I'm Kapisch 👋
 
 <p align="center">
-  <img src="stats.svg" alt="Kapisch's GitHub Stats" />
-  <img src="languages.svg" alt="Kapisch's Most Used Languages" />
+  <img src="github-plaque.svg" alt="Kapisch's GitHub Stats Plaque" />
 </p>
 
 
