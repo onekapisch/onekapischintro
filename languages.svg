@@ -1,0 +1,63 @@
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: url(#gold_gradient); }
+    .lang_name { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #C8C8C8; }
+    .lang_percent { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #fff; text-anchor: end; }
+</style>
+
+<defs>
+    <linearGradient id="gold_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#F7D060;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#EAC54F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ts_gradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#4A90E2"/>
+      <stop offset="100%" stop-color="#80C9FF"/>
+    </linearGradient>
+    <linearGradient id="html_gradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#E44D26"/>
+      <stop offset="100%" stop-color="#F16529"/>
+    </linearGradient>
+    <linearGradient id="css_gradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#563D7C"/>
+      <stop offset="100%" stop-color="#8C69C1"/>
+    </linearGradient>
+    <linearGradient id="js_gradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#F0DB4F"/>
+      <stop offset="100%" stop-color="#F7DF1E"/>
+    </linearGradient>
+</defs>
+
+<rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="#281E36" stroke="#4F4659"/>
+
+<g transform="translate(25, 35)">
+    <text x="0" y="0" class="header">Most Used Languages</text>
+</g>
+
+<g transform="translate(25, 60)">
+    <g transform="translate(0, 10)">
+      <text x="0" y="0" class="lang_name">TypeScript</text>
+      <text x="445" y="0" class="lang_percent">50.41%</text>
+      <rect x="0" y="10" width="445" height="8" rx="4" fill="#434343"/>
+      <rect x="0" y="10" width="224.32" height="8" rx="4" fill="url(#ts_gradient)"/>
+    </g>
+    <g transform="translate(0, 45)">
+      <text x="0" y="0" class="lang_name">HTML</text>
+      <text x="445" y="0" class="lang_percent">41.78%</text>
+      <rect x="0" y="10" width="445" height="8" rx="4" fill="#434343"/>
+      <rect x="0" y="10" width="185.92" height="8" rx="4" fill="url(#html_gradient)"/>
+    </g>
+    <g transform="translate(0, 80)">
+      <text x="0" y="0" class="lang_name">CSS</text>
+      <text x="445" y="0" class="lang_percent">4.14%</text>
+      <rect x="0" y="10" width="445" height="8" rx="4" fill="#434343"/>
+      <rect x="0" y="10" width="18.42" height="8" rx="4" fill="url(#css_gradient)"/>
+    </g>
+    <g transform="translate(0, 115)">
+      <text x="0" y="0" class="lang_name">JavaScript</text>
+      <text x="445" y="0" class="lang_percent">3.67%</text>
+      <rect x="0" y="10" width="445" height="8" rx="4" fill="#434343"/>
+      <rect x="0" y="10" width="16.33" height="8" rx="4" fill="url(#js_gradient)"/>
+    </g>
+</g>
+</svg>
