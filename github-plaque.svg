@@ -1,0 +1,113 @@
+<!--
+  THE CELESTIAL PLAQUE - V3 (PREMIUM & UNIFIED DESIGN)
+  This version uses advanced SVG techniques to simulate texture, depth, and metallic sheen.
+  It is a single, cohesive graphic for a truly luxurious and expensive look.
+-->
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Filters for texture and depth -->
+    <filter id="texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="1" result="turbulence"/>
+      <feDiffuseLighting in="turbulence" lighting-color="#4a3d6a" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="45"/>
+      </feDiffuseLighting>
+    </filter>
+    <filter id="gold-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Complex gradient for shiny, polished gold -->
+    <linearGradient id="polished-gold" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="50%" stop-color="#F8D477" />
+      <stop offset="95%" stop-color="#C59B4D" />
+      <stop offset="100%" stop-color="#B4883E" />
+    </linearGradient>
+
+    <!-- Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+      .header { font-family: 'Playfair Display', serif; font-size: 28px; fill: url(#polished-gold); text-anchor: middle; filter: url(#gold-glow); }
+      .stat-label { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400; fill: #D1C9E3; text-anchor: start; }
+      .stat-value { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; fill: #FFFFFF; text-anchor: end; }
+      .lang-label { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; fill: #D1C9E3; text-anchor: start; }
+      .lang-percent { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400; fill: #D1C9E3; text-anchor: end; }
+    </style>
+  </defs>
+
+  <!-- Main Plaque Body -->
+  <rect width="800" height="420" rx="15" fill="#14101D" />
+  <rect width="800" height="420" rx="15" fill="url(#plaque-texture)" opacity="0.5" filter="url(#texture)"/>
+  <rect x="0.5" y="0.5" width="799" height="419" rx="14.5" stroke="url(#polished-gold)" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="400" y="60" class="header">Kapisch's GitHub Profile</text>
+
+  <!-- Stats Section -->
+  <g id="stats-section" transform="translate(50, 100)">
+    <rect width="700" height="100" rx="8" fill="#000000" fill-opacity="0.2"/>
+    <path d="M 10 0 H 690 A 10 10 0 0 1 700 10 V 90 A 10 10 0 0 1 690 100 H 10 A 10 10 0 0 1 0 90 V 10 A 10 10 0 0 1 10 0 Z" stroke="url(#polished-gold)" stroke-width="1.5" stroke-opacity="0.8"/>
+    
+    <!-- Stats Grid -->
+    <g id="stats-grid" transform="translate(40, 20)">
+      <!-- Left Column -->
+      <g id="left-column">
+        <g transform="translate(0, 15)">
+          <text class="stat-label">Total Stars Earned</text>
+          <text x="280" class="stat-value">3</text>
+        </g>
+        <g transform="translate(0, 60)">
+          <text class="stat-label">Total Commits (2025)</text>
+          <text x="280" class="stat-value">115</text>
+        </g>
+      </g>
+      <!-- Right Column -->
+      <g id="right-column" transform="translate(340, 0)">
+        <g transform="translate(0, 15)">
+          <text class="stat-label">Total Pull Requests</text>
+          <text x="280" class="stat-value">5</text>
+        </g>
+        <g transform="translate(0, 60)">
+          <text class="stat-label">Total Issues</text>
+          <text x="280" class="stat-value">0</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Languages Section -->
+  <g id="languages-section" transform="translate(50, 230)">
+    <!-- Language 1: TypeScript -->
+    <g transform="translate(0, 0)">
+      <text class="lang-label">TypeScript</text>
+      <text x="700" class="lang-percent">50.41%</text>
+      <rect y="25" width="700" height="10" rx="5" fill="#000000" fill-opacity="0.3"/>
+      <rect y="25" width="352.87" height="10" rx="5" fill="url(#polished-gold)"/>
+    </g>
+    <!-- Language 2: HTML -->
+    <g transform="translate(0, 50)">
+      <text class="lang-label">HTML</text>
+      <text x="700" class="lang-percent">41.78%</text>
+      <rect y="25" width="700" height="10" rx="5" fill="#000000" fill-opacity="0.3"/>
+      <rect y="25" width="292.46" height="10" rx="5" fill="url(#polished-gold)"/>
+    </g>
+    <!-- Language 3: CSS -->
+    <g transform="translate(0, 100)">
+      <text class="lang-label">CSS</text>
+      <text x="700" class="lang-percent">4.14%</text>
+      <rect y="25" width="700" height="10" rx="5" fill="#000000" fill-opacity="0.3"/>
+      <rect y="25" width="28.98" height="10" rx="5" fill="url(#polished-gold)"/>
+    </g>
+    <!-- Language 4: JavaScript -->
+    <g transform="translate(0, 150)">
+      <text class="lang-label">JavaScript</text>
+      <text x="700" class="lang-percent">3.67%</text>
+      <rect y="25" width="700" height="10" rx="5" fill="#000000" fill-opacity="0.3"/>
+      <rect y="25" width="25.69" height="10" rx="5" fill="url(#polished-gold)"/>
+    </g>
+  </g>
+</svg>
