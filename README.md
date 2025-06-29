@@ -1,11 +1,9 @@
 # Hi there, I'm Kapisch 👋
 
-<a href="https://github.com/onekapisch">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=onekapisch&show_icons=true&theme=dracula&line_height=27" alt="onekapisch's github stats"/>
-</a>
-<a href="https://github.com/onekapisch">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=onekapisch&layout=compact&theme=dracula" alt="onekapisch's top languages"/>
-</a>
+<p align="center">
+  <img src="stats.svg" alt="Kapisch's GitHub Stats" />
+  <img src="languages.svg" alt="Kapisch's Most Used Languages" />
+</p>
 
 ---
 
